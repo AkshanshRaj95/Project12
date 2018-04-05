@@ -5,8 +5,8 @@ void main()
 	int at[10],burst_time[10],bt[10];
 	char pro_id[10];
 	char te;
-	int i,smallest,count=0,time=3,limit,flag=0,j,remain,time_q=10,pos,temp;
-	double wait_time=0,turnaround_time=0;
+	int i,smallest,count=0,time=3,limit,flag=0,j,remain,time_q=10,pos,temp,n;
+	float wait_time=0,turnaround_time=0;
 	float average_waiting_time,average_turnaround_time;
 	printf("\nEnter the Total Number of Processes:\t");
 	scanf("%d",&limit);
