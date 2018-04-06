@@ -52,34 +52,5 @@ void main()
 		time=smallest;
 	}
 	for(i=0;i<limit;i++)
-		burst_time[i]=bt[i];
-	for(i=0;count!=limit;i++)
-	{
-		if(at[i]<=time)
-		{
-			if(bt[i]<=time_q&&bt[i]>0)
-			{
-				time+=bt[i];
-				bt[i]=0;
-				flag=1;
-			}
-			else if(bt[i]>0)
-			{
-				bt[i]-=time_q;
-				time+=time_q;
-			}
-			if(bt[i]==0&&flag==1)
-			{
-				count++;
-				printf("P[%c]\t|\t%d\t|\t%d\n",pro_id[i],time-at[i],time-at[i]-burst_time[i]);
-				wait_time+=time-at[i]-burst_time[i];
-				turnaround_time+=time-at[i];
-				flag=0;
-			}
-		}
-		if((i+1)==limit)
-			i=-1;
-	}
-	printf("\nAverage Waiting Time= %f\n",wait_time*1.0/n); 
-    printf("Avg Turnaround Time = %f",turnaround_time*1.0/n);  
+		burst_time[i]=bt[i]; 
 }
