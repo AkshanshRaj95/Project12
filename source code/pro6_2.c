@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h> 
 void main() 
+	sdf
 {
 	int at[10],burst_time[10],bt[10];
 	char pro_id[10];
