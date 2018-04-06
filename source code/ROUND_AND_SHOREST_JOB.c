@@ -42,7 +42,15 @@ void main()
         at[pos]=temp;
     }
     smallest=at[0];
-    
+    for(i=1;i<limit;i++)
+    {
+    	if(at[i]<smallest)
+    		smallest=at[i];
+	}
+	if(smallest>3)
+	{
+		time=smallest;
+	}
 	for(i=0;i<limit;i++)
 		burst_time[i]=bt[i]; 
 	
